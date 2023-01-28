@@ -1,5 +1,5 @@
 /* From pgn-parser */
-type SevenRoosterTagKeys = 'Event'|'Site'|'Round'|'White'|'Black'|'Result'
+export type SevenRoosterTagKeys = 'Event'|'Site'|'Round'|'White'|'Black'|'Result'
 export type SevenRoosterTags = { [key in SevenRoosterTagKeys]: string } & { Date?: PgnDate }
 export type PlayerTagKeys = 'WhiteTitle'|'BlackTitle'|'WhiteElo'|'BlackElo'|'WhiteUSCF'|'BlackUSCF'|'WhiteNA'|
     'BlackNA'|'WhiteType'|'BlackType'
@@ -24,7 +24,7 @@ export type TimeTags = { [key in TimeTagKeys]: PgnTime }
 export type Tags = { [key in TagKeys]: string } & DateTags & TimeTags & MessagesObject & { [key in TimeControlKeys]: TimeControl }
 
 export type Message = { key: string, value: string, message: string }
-type MessagesObject = { messages: Message[] }
+export type MessagesObject = { messages: Message[] }
 
 export type GameComment = { comment?: string, colorArrows?: string[], colorFields?: string[],
     clk?: string, egt?: string, emt?: string, mct?: string, eval?: string }
