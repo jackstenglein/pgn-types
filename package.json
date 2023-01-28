@@ -1,8 +1,15 @@
 {
-  "name": "pgn-types",
-  "version": "1.0.0",
+  "name": "@mliebelt/pgn-types",
+  "version": "1.0.2",
   "description": "Provide the (type) language for all the `pgn-*` packages I am developing.",
-  "main": "index.js",
+  "main": "lib/index.umd.js",
+  "module": "lib/index.umd.js",
+  "types": "lib/index.umd.d.ts",
+  "files": [
+    "README.md",
+    "lib/index.umd.d.ts",
+    "lib/index.umd.js"
+  ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.0",
