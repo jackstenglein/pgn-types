@@ -21,7 +21,7 @@ export type DateTags = { [key in DateTagKeys]: PgnDate }
 export type TimeTagKeys = 'Time'|'UTCTime'
 export type PgnTime = { value?: string, hour?: number, minute?: number, second?: number }
 export type TimeTags = { [key in TimeTagKeys]: PgnTime }
-export type Tags = { [key in TagKeys]: string } & DateTags & TimeTags & MessagesObject & { [key in TimeControlKeys]: TimeControl }
+export type Tags = { [key in Partial<TagKeys>]: string } & DateTags & TimeTags & MessagesObject & { [key in TimeControlKeys]: TimeControl }
 
 export type Message = { key: string, value: string, message: string }
 export type MessagesObject = { messages: Message[] }
