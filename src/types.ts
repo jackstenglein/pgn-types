@@ -9,7 +9,7 @@ export type AlternativeStartingKeys = 'SetUp'|'FEN'
 export type GameConclusionTagKeys = 'Termination'
 export type MiscTagKeys = 'Annotator'|'Mode'|'PlyCount'
 export type LichessTagKeys = 'PuzzleEngine'|'PuzzleMakerVersion'|'PuzzleCategory'|'PuzzleWinner'|'Variant'|'WhiteRatingDiff'|
-    'BlackRatingDiff'|'WhiteFideId'|'BlackFideId'|'WhiteTeam'|'BlackTeam'
+    'BlackRatingDiff'|'WhiteFideId'|'BlackFideId'|'WhiteTeam'|'BlackTeam'|'Orientation'
 export type ClockTagKeys = 'Clock'|'WhiteClock'|'BlackClock'
 export type TagKeys = SevenRoosterTagKeys | PlayerTagKeys | EventTagKeys | OpeningTagKeys |
     AlternativeStartingKeys | GameConclusionTagKeys | MiscTagKeys | LichessTagKeys | ClockTagKeys
