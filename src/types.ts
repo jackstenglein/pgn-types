@@ -1,6 +1,6 @@
 /* From pgn-parser */
-export type SevenRoosterTagKeys = 'Event'|'Site'|'Round'|'White'|'Black'|'Result'
-export type SevenRoosterTags = { [key in SevenRoosterTagKeys]: string } & { Date?: PgnDate }
+export type SevenRosterTagKeys = 'Event'|'Site'|'Round'|'White'|'Black'|'Result'
+export type SevenRosterTags = { [key in SevenRosterTagKeys]: string } & { Date?: PgnDate }
 export type PlayerTagKeys = 'WhiteTitle'|'BlackTitle'|'WhiteElo'|'BlackElo'|'WhiteUSCF'|'BlackUSCF'|'WhiteNA'|
     'BlackNA'|'WhiteType'|'BlackType'
 export type EventTagKeys = 'EventSponsor'|'Section'|'Stage'|'Board'
@@ -11,7 +11,7 @@ export type MiscTagKeys = 'Annotator'|'Mode'|'PlyCount'
 export type LichessTagKeys = 'PuzzleEngine'|'PuzzleMakerVersion'|'PuzzleCategory'|'PuzzleWinner'|'Variant'|'WhiteRatingDiff'|
     'BlackRatingDiff'|'WhiteFideId'|'BlackFideId'|'WhiteTeam'|'BlackTeam'|'Orientation'
 export type ClockTagKeys = 'Clock'|'WhiteClock'|'BlackClock'
-export type TagKeys = SevenRoosterTagKeys | PlayerTagKeys | EventTagKeys | OpeningTagKeys |
+export type TagKeys = SevenRosterTagKeys | PlayerTagKeys | EventTagKeys | OpeningTagKeys |
     AlternativeStartingKeys | GameConclusionTagKeys | MiscTagKeys | LichessTagKeys | ClockTagKeys
 export type TimeControlKeys = 'TimeControl'
 export type TimeControl = { kind?: string, value?: string, moves?: number, seconds?: number, increment?: number }
