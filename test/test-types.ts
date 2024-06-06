@@ -1,11 +1,11 @@
 import {describe} from "mocha";
 
 const should = require('chai').should()
-import {SevenRoosterTags, Tags} from "../src"
+import {SevenRosterTags, Tags} from "../src"
 import {expect} from "chai";
 
-const sevenRoosterTagValues = function(tags:Tags):string[] {
-    // const isSevenRoosterTag(tag: string): tag is SevenRoosterTags {
+const sevenRosterTagValues = function(tags:Tags):string[] {
+    // const isSevenRosterTag(tag: string): tag is SevenRosterTags {
     //     return true
     // }
     let key: keyof typeof tags
@@ -19,7 +19,7 @@ const sevenRoosterTagValues = function(tags:Tags):string[] {
 
 describe("When using tag types from the library", function (){
     it("should allow empty tags", function () {
-        let result = sevenRoosterTagValues(<Tags>{ Event: ''})
+        let result = sevenRosterTagValues(<Tags>{ Event: ''})
         should.exist(result)
         expect(result).to.eql([])
     })
